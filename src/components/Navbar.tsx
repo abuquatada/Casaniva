@@ -21,6 +21,12 @@ const Navbar: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Function to close the menu when clicking a menu item
+  const handleMenuClick = () => {
+    setIsOpen(false); // Close mobile menu
+    setDropdownOpen(false); // Close dropdown as well
+  };
+
   return (
     <nav className="flex justify-between items-center px-6 py-4 border-b shadow-md bg-white relative z-50">
       {/* Left Section (Logo) */}
@@ -35,10 +41,14 @@ const Navbar: React.FC = () => {
         }`}
       >
         <li className="hover:text-gray-500 cursor-pointer">
-          <Link to="/">HOME</Link>
+          <Link to="/" onClick={handleMenuClick}>
+            HOME
+          </Link>
         </li>
         <li className="hover:text-gray-500 cursor-pointer">
-          <Link to="/about">ABOUT</Link>
+          <Link to="/about" onClick={handleMenuClick}>
+            ABOUT
+          </Link>
         </li>
 
         {/* Products Dropdown */}
@@ -65,6 +75,7 @@ const Navbar: React.FC = () => {
                 <div
                   key={item}
                   className="p-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={handleMenuClick} // Close menu when clicking an item
                 >
                   {item}
                 </div>
@@ -73,8 +84,16 @@ const Navbar: React.FC = () => {
           )}
         </li>
 
-        <li className="hover:text-gray-500 cursor-pointer">GIFTING</li>
-        <li className="hover:text-gray-500 cursor-pointer">SALE</li>
+        <li className="hover:text-gray-500 cursor-pointer">
+          <Link to="/gifting" onClick={handleMenuClick}>
+            GIFTING
+          </Link>
+        </li>
+        <li className="hover:text-gray-500 cursor-pointer">
+          <Link to="/sale" onClick={handleMenuClick}>
+            SALE
+          </Link>
+        </li>
       </ul>
 
       {/* Right Section (Icons) */}
@@ -102,10 +121,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Toggle */}
       <button
         className="lg:hidden text-2xl"
-        onClick={() => {
-          setIsOpen(!isOpen);
-          setDropdownOpen(false); // Close dropdown when toggling mobile menu
-        }}
+        onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle Menu"
       >
         {isOpen ? <X size={28} /> : <Menu size={28} />}
