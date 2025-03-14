@@ -52,7 +52,7 @@ const products: Product[] = [
 ];
 
 const sendWhatsAppMessage = (product: Product) => {
-  const phoneNumber = "8878849690";
+  const phoneNumber = "+918878849690";
   const message = `Hello, I'm interested in buying *${product.name}* priced at ${product.price}. Please provide more details.`;
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
