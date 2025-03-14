@@ -30,8 +30,6 @@ function App() {
               </>
             }
           />
-          {/* Know More Page */}
-          <Route path="/know-more" element={<KnowMore />} />
           {/* About Page */}
           <Route path="/about" element={<About />} />
         </Routes>

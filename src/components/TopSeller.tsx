@@ -60,7 +60,7 @@ const sendWhatsAppMessage = (product: Product) => {
   window.open(whatsappURL, "_blank");
 };
 
-const Topseller: React.FC = () => {
+const TopSeller: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -70,6 +70,24 @@ const Topseller: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablet & small desktop
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -101,4 +119,4 @@ const Topseller: React.FC = () => {
   );
 };
 
-export default Topseller;
+export default TopSeller;
