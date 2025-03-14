@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +34,12 @@ const Navbar: React.FC = () => {
           isOpen ? "block p-6 space-y-4 text-center" : "hidden lg:flex"
         }`}
       >
-        <li className="hover:text-gray-500 cursor-pointer">HOME</li>
-        <li className="hover:text-gray-500 cursor-pointer">ABOUT</li>
+        <li className="hover:text-gray-500 cursor-pointer">
+          <Link to="/">HOME</Link>
+        </li>
+        <li className="hover:text-gray-500 cursor-pointer">
+          <Link to="/about">ABOUT</Link>
+        </li>
 
         {/* Products Dropdown */}
         <li className="relative cursor-pointer" ref={dropdownRef}>
