@@ -4,74 +4,77 @@ import { RiRefund2Fill } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
 import { Link } from "react-router-dom";
 
+const benefits = [
+  {
+    icon: (
+      <MdVerified className="text-3xl text-gray-700" aria-label="Verified" />
+    ),
+    title: "100% ORIGINAL",
+    description:
+      "All products are original and go through strict quality checks.",
+  },
+  {
+    icon: (
+      <RiRefund2Fill className="text-3xl text-gray-700" aria-label="Refund" />
+    ),
+    title: "7-Day RETURN",
+    description: "Use our hassle-free method to return.",
+  },
+  {
+    icon: (
+      <FaShippingFast
+        className="text-3xl text-gray-700"
+        aria-label="Shipping"
+      />
+    ),
+    title: "Free Shipping",
+    description: "Free Shipping & Returns all across India.",
+  },
+];
+
 const InfoSection = () => {
   return (
     <div className="bg-gray-100 py-8 px-6">
       {/* Top Icons Section */}
       <div className="flex flex-wrap justify-center md:justify-between items-center text-center gap-6 md:gap-12 border-b pb-6">
-        <div className="flex items-center gap-3">
-          <MdVerified className="text-3xl text-gray-700" />
-          <div>
-            <h3 className="font-semibold text-lg">100% ORIGINAL</h3>
-            <p className="text-sm text-gray-600">
-              All products are original and go through strict quality checks.
-            </p>
+        {benefits.map((benefit, index) => (
+          <div
+            key={index}
+            className="flex items-center gap-3 text-center md:text-left"
+          >
+            {benefit.icon}
+            <div>
+              <h3 className="font-semibold text-lg">{benefit.title}</h3>
+              <p className="text-sm text-gray-600">{benefit.description}</p>
+            </div>
           </div>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <RiRefund2Fill className="text-3xl text-gray-700" />
-          <div>
-            <h3 className="font-semibold text-lg">7-Day RETURN</h3>
-            <p className="text-sm text-gray-600">
-              Use our hassle-free method to return.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3">
-          <FaShippingFast className="text-3xl text-gray-700" />
-          <div>
-            <h3 className="font-semibold text-lg">Free Shipping</h3>
-            <p className="text-sm text-gray-600">
-              Free Shipping & Returns all across India.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
 
       {/* Description Section */}
       <div className="mt-6 text-gray-800">
-        <h2 className="text-xl font-semibold mb-3">
-          Indulge in a world of scents:{" "}
-          <span className="font-bold">Perfumes for All</span>
+        <h2 className="text-xl font-semibold mb-3 text-left">
+          | OUR PROMISE |
         </h2>
-        <p className="text-sm leading-relaxed">
-          Explore an enchanting collection from{" "}
-          <span className="font-semibold">SKINN By Titan</span> that captivates
-          the senses. Our exquisite range of{" "}
-          <span className="font-semibold">perfumes</span> offers an unparalleled
-          sensory experience, meticulously crafted for every individual’s unique
-          taste and style.
+        <p className="text-sm leading-relaxed text-left">
+          We don’t just create skincare; we create experiences that uplift,
+          rejuvenate, and empower. Whether it’s a deeply hydrating moisturizer,
+          a glow-boosting serum, or a refreshing rice scrub, each product is
+          made to bring out your skin’s natural radiance.
         </p>
-        <p className="text-sm leading-relaxed mt-3">
-          From fresh and invigorating aromas to elegant and sophisticated
-          blends, our collection embraces the art of perfumery, ensuring a scent
-          for every occasion and mood.
-        </p>
-        <p className="text-sm leading-relaxed mt-3">
-          With our <span className="font-semibold">"Perfumes for All"</span>{" "}
-          motto, discover a world of scents that ignite your imagination and
-          allow you to express yourself through{" "}
-          <span className="font-semibold">fragrance</span>. Buy your favorite{" "}
-          <span className="font-semibold">perfume</span> conveniently{" "}
-          <span className="font-semibold">online</span> today!
+        <h3 className="font-bold text-lg mt-3 text-left">
+          GLOW NATURALLY WITH CASANIVA
+        </h3>
+        <p className="text-sm text-left leading-relaxed">
+          Explore our collection & experience the beauty of pure skincare.
         </p>
 
-        <div className="mt-5">
+        {/* Know More Button */}
+        <div className="mt-5 text-left">
           <Link
-            to="/know-more"
+            to="/about"
             className="text-black font-semibold underline hover:text-gray-700 transition-all"
+            aria-label="Learn more about Casaniva skincare"
           >
             KNOW MORE
           </Link>

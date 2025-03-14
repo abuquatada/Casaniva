@@ -60,7 +60,7 @@ const sendWhatsAppMessage = (product: Product) => {
   window.open(whatsappURL, "_blank");
 };
 
-const FeatureProducts: React.FC = () => {
+const Topseller: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -74,7 +74,7 @@ const FeatureProducts: React.FC = () => {
 
   return (
     <div className="w-full max-w-screen-xl mx-auto px-4 text-center p-6">
-      <h2 className="text-3xl font-bold mb-6">Trending Products</h2>
+      <h2 className="text-3xl font-bold mb-6">Top Selling Products</h2>
       <Slider {...settings}>
         {products.map((product) => (
           <div
@@ -101,4 +101,4 @@ const FeatureProducts: React.FC = () => {
   );
 };
 
-export default FeatureProducts;
+export default Topseller;

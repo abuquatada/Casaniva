@@ -6,7 +6,9 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Import Link
-import img1 from "../assests/img1.jpg";
+import Logo1 from "../assests/Images/Logo1.png";
+import Logo2 from "../assests/Images/Logo2.png";
+import Logo3 from "../assests/Images/Logo3.png";
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +16,13 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo Section */}
         <div className="flex justify-center md:justify-start">
-          <img src={img1} alt="Skinn Logo" className="w-24" />
+          <div className="w-24 h-24 bg-white flex items-center justify-center rounded-lg border border-gray-300 shadow-md overflow-hidden">
+            <img
+              src={Logo3}
+              alt="Skinn Logo"
+              className="w-auto h-full object-contain"
+            />
+          </div>
         </div>
 
         {/* Help & Information */}

@@ -7,6 +7,8 @@ import KnowMore from "./components/KnowMore";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Testimonials from "./components/Testimonials";
 import About from "./Pages/About";
+import Carousel1 from "./components/Carousel1";
+import Topseller from "./components/TopSeller";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
               <>
                 <HeroBanner />
                 <FeaturedProducts />
+                <Carousel1 />
+                <Topseller />
                 <InfoSection />
                 <Testimonials />
               </>
