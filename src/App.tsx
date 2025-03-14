@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import HeroBanner from "./components/HeroBanner";
 import InfoSection from "./components/InfoSection";
 import Footer from "./components/Footer";
-import KnowMore from "./components/KnowMore";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Testimonials from "./components/Testimonials";
 import About from "./Pages/About";
