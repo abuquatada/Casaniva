@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
   FaEnvelope,
 } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link
 import img1 from "../assests/img1.jpg";
 
 const Footer: React.FC = () => {
@@ -20,12 +21,16 @@ const Footer: React.FC = () => {
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold mb-3">Help & Information</h3>
           <ul className="space-y-2 text-gray-400">
+            <li>
+              <Link to="/about" className="hover:text-white">
+                About Us
+              </Link>{" "}
+              {/* Updated Link */}
+            </li>
             {[
-              "About Us",
               "Help & Contact",
               "Delivery Information",
               "Track Order",
-              "TataNeu Coins",
               "Cyber Security Policy",
             ].map((item) => (
               <li key={item}>
@@ -40,7 +45,7 @@ const Footer: React.FC = () => {
         {/* Newsletter Subscription */}
         <div className="text-center md:text-left">
           <h3 className="text-lg font-semibold mb-3">
-            Sign Up To Receive Offers & News
+            Sign Up To Receive Offers
           </h3>
           <div className="flex flex-col md:flex-row items-center">
             <input
@@ -78,7 +83,7 @@ const Footer: React.FC = () => {
 
         {/* Copyright & Terms */}
         <div className="text-gray-400 text-sm text-center md:text-left">
-          © 2025 Titan Company Limited. All Rights Reserved |
+          © 2025 Casaniva Limited. All Rights Reserved |
           <a href="#" className="hover:text-white">
             {" "}
             Terms & Conditions{" "}

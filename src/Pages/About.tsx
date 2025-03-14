@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gray-100 py-10 px-6 md:px-12 lg:px-24">
       {/* OUR PROMISE SECTION */}
