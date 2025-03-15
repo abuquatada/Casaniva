@@ -92,7 +92,7 @@ const TopSeller: React.FC = () => {
 
   return (
     <div className="w-full max-w-screen-xl mx-auto px-4 text-center p-6">
-      <h2 className="text-3xl font-bold mb-6">Top Selling Products</h2>
+      <h2 className="text-3xl font-semibold mb-6">Top Selling Products</h2>
       <Slider {...settings}>
         {products.map((product) => (
           <div
@@ -104,7 +104,7 @@ const TopSeller: React.FC = () => {
               alt={product.name}
               className="w-[303px] h-[303px] object-cover mx-auto mb-4 rounded-lg"
             />
-            <h3 className="text-xl font-semibold">{product.name}</h3>
+            <h3 className="text-xl ">{product.name}</h3>
             <p className="text-gray-600">{product.price}</p>
             <button
               onClick={() => sendWhatsAppMessage(product)}

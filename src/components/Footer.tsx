@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
 
         {/* Help & Information */}
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold mb-3">Help & Information</h3>
+          <h3 className="text-lg mb-3">Help & Information</h3>
           <ul className="space-y-2 text-gray-400">
             <li>
               <Link to="/about" className="hover:text-white">
@@ -52,16 +52,14 @@ const Footer: React.FC = () => {
 
         {/* Newsletter Subscription */}
         <div className="text-center md:text-left">
-          <h3 className="text-lg font-semibold mb-3">
-            Sign Up To Receive Offers
-          </h3>
+          <h3 className="text-lg mb-3">Sign Up To Receive Offers</h3>
           <div className="flex flex-col md:flex-row items-center">
             <input
               type="email"
               placeholder="Enter your email"
               className="w-full md:w-auto px-4 py-2 bg-black border border-gray-500 text-white focus:outline-none focus:ring-2 focus:ring-gray-300"
             />
-            <button className="mt-3 md:mt-0 md:ml-3 px-6 py-2 bg-white text-black font-semibold hover:bg-gray-300">
+            <button className="mt-3 md:mt-0 md:ml-3 px-6 py-2 bg-white text-black hover:bg-gray-300">
               SUBSCRIBE
             </button>
           </div>
@@ -72,7 +70,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto mt-10 border-t border-gray-700 pt-6 flex flex-wrap justify-center md:justify-between items-center gap-6">
         {/* Social Media Links */}
         <div className="flex flex-wrap items-center space-x-4">
-          <h3 className="text-lg font-semibold">Follow Us</h3>
+          <h3 className="text-lg">Follow Us</h3>
           {[
             { icon: <FaFacebookF size={20} />, link: "#" },
             { icon: <FaInstagram size={20} />, link: "#" },

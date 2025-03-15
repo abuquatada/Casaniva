@@ -56,7 +56,9 @@ const Testimonials: React.FC = () => {
 
   return (
     <div className="py-10 px-4 md:px-12 lg:px-24 text-center">
-      <h2 className="text-3xl font-bold text-gray-900 mb-6">TESTIMONIALS</h2>
+      <h2 className="text-3xl font-semibold text-gray-900 mb-6">
+        Testimonials
+      </h2>
 
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center gap-2">
@@ -76,7 +78,7 @@ const Testimonials: React.FC = () => {
             <div key={item.id} className="p-4">
               <div className="border rounded-lg shadow-md p-6 text-left bg-white">
                 <p className="text-gray-500 text-sm">{item.date}</p>
-                <h3 className="text-lg font-semibold mt-1">
+                <h3 className="text-lg mt-1">
                   {item.name}{" "}
                   <span className="text-blue-500">• Verified Buyer</span>
                 </h3>

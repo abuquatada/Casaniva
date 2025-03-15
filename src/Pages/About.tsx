@@ -8,7 +8,7 @@ const About: React.FC = () => {
     <div className="bg-gray-100 py-10 px-4 sm:px-6 md:px-12 lg:px-24">
       {/* OUR PROMISE SECTION */}
       <section className="text-center mb-12 px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 mb-4">
           OUR PROMISE
         </h2>
         <p className="text-gray-700 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
@@ -17,7 +17,7 @@ const About: React.FC = () => {
           a glow-boosting serum, or a refreshing rice scrub, each product is
           made to bring out your skin’s natural radiance.
         </p>
-        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-700 mt-4">
+        <h3 className="text-lg sm:text-xl md:text-2xl text-blue-700 mt-4">
           GLOW NATURALLY, GLOW WITH CASANIVA
         </h3>
         <p className="text-gray-600 text-base sm:text-lg">
@@ -27,7 +27,7 @@ const About: React.FC = () => {
 
       {/* WELCOME SECTION */}
       <section className="text-center mb-12 px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl  text-blue-900 mb-4">
           WELCOME TO CASANIVA <br /> WHERE SKIN MEETS PURITY
         </h2>
         <p className="text-gray-700 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
@@ -39,7 +39,7 @@ const About: React.FC = () => {
 
       {/* WHY CHOOSE CASANIVA */}
       <section className="mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 text-center mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl  text-blue-900 text-center mb-6">
           WHY CHOOSE CASANIVA?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
@@ -62,7 +62,7 @@ const About: React.FC = () => {
             },
           ].map((item, index) => (
             <div key={index} className="p-6 bg-white shadow-md rounded-lg">
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-800">
+              <h3 className="text-lg sm:text-xl  text-blue-800">
                 {item.title}
               </h3>
               <p className="text-sm sm:text-base">{item.text}</p>
@@ -73,7 +73,7 @@ const About: React.FC = () => {
 
       {/* GLOW NATURALLY */}
       <section className="text-center mb-12 px-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 mb-4">
           GLOW NATURALLY WITH CASANIVA <br /> PURE, ORGANIC, BEAUTIFUL
         </h2>
         <p className="text-gray-700 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">
@@ -86,7 +86,7 @@ const About: React.FC = () => {
 
       {/* FINAL WHY CHOOSE CASANIVA */}
       <section className="mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 text-center mb-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl text-blue-900 text-center mb-6">
           WHY CASANIVA?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
@@ -105,7 +105,7 @@ const About: React.FC = () => {
             },
           ].map((item, index) => (
             <div key={index} className="p-6 bg-white shadow-md rounded-lg">
-              <h3 className="text-lg sm:text-xl font-semibold text-blue-800">
+              <h3 className="text-lg sm:text-xl  text-blue-800">
                 {item.title}
               </h3>
               <p className="text-sm sm:text-base">{item.text}</p>
@@ -116,7 +116,7 @@ const About: React.FC = () => {
 
       {/* HASHTAGS */}
       <section className="text-center mt-10">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-700">
+        <h2 className="text-lg sm:text-xl md:text-2xl  text-blue-700">
           #CASANIVAGLOW #PURELYNATURAL #SKINCARETHATCARES
         </h2>
       </section>

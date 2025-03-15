@@ -10,8 +10,7 @@ const benefits = [
       <MdVerified className="text-3xl text-gray-700" aria-label="Verified" />
     ),
     title: "100% ORIGINAL",
-    description:
-      "All products are original and go through strict quality checks.",
+    description: "All products are original",
   },
   {
     icon: (
@@ -44,7 +43,7 @@ const InfoSection = () => {
           >
             {benefit.icon}
             <div>
-              <h3 className="font-semibold text-lg">{benefit.title}</h3>
+              <h3 className=" text-lg">{benefit.title}</h3>
               <p className="text-sm text-gray-600">{benefit.description}</p>
             </div>
           </div>
@@ -53,16 +52,14 @@ const InfoSection = () => {
 
       {/* Description Section */}
       <div className="mt-6 text-gray-800">
-        <h2 className="text-xl font-semibold mb-3 text-left">
-          | OUR PROMISE |
-        </h2>
+        <h2 className="text-xl mb-3 text-left">| OUR PROMISE |</h2>
         <p className="text-sm leading-relaxed text-left">
           We don’t just create skincare; we create experiences that uplift,
           rejuvenate, and empower. Whether it’s a deeply hydrating moisturizer,
           a glow-boosting serum, or a refreshing rice scrub, each product is
           made to bring out your skin’s natural radiance.
         </p>
-        <h3 className="font-bold text-lg mt-3 text-left">
+        <h3 className=" text-lg mt-3 text-left">
           GLOW NATURALLY WITH CASANIVA
         </h3>
         <p className="text-sm text-left leading-relaxed">
@@ -73,7 +70,7 @@ const InfoSection = () => {
         <div className="mt-5 text-left">
           <Link
             to="/about"
-            className="text-black font-semibold underline hover:text-gray-700 transition-all"
+            className="text-black underline hover:text-gray-700 transition-all"
             aria-label="Learn more about Casaniva skincare"
           >
             KNOW MORE
