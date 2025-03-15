@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex justify-between items-center px-6 py-4 border-b shadow-md bg-white relative z-50">
       {/* Left Section (Logo) */}
-      <div className="text-2xl font-bold tracking-wide">
+      <div className="text-2xl  tracking-wide">
         <span className="text-black">CASANIVA</span>
       </div>
 
